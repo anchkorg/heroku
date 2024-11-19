@@ -1,0 +1,28 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'route.dart';
+import 'vertical_menu_item.dart';
+
+class MenuList extends ConsumerWidget {
+  final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
+
+  MenuList({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: sideMenuItemRoutes
+          .map((item) => VerticalMenuItem(
+              itemName: item.name,
+              onTap: () {
+                if (ref.read(activeItem) != item.name) {
+                  ref.read(activeItem.notifier).state = item.name;
+                  navigatorKey.currentState!.pushNamed(item.route);
+                }
+              }))
+          .toList(),
+    );
+  }
+}

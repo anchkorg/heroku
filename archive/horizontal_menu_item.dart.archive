@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'active_menu_line.dart';
+//import 'custom_text.dart';
+import 'menu_item_widgets.dart';
+import 'route.dart';
+//import 'style.dart';
+//import 'package:universe/pages/home/presentation/controllers/menu_controller.dart1';
+
+class HorizontalMenuItem extends ConsumerWidget {
+  final String itemName;
+  final VoidCallback onTap;
+  const HorizontalMenuItem(
+      {Key? key, required this.itemName, required this.onTap})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    String activeItemValue = ref.read(activeItem);
+    MenuItemWidgets row = MenuItemWidgets(
+      itemName: itemName,
+      activeItemValue: activeItemValue,
+      menuItemType: MenuItemType.row,
+    );
+    return InkWell(
+        onTap: onTap,
+        child: Row(
+          children: [
+            ActiveMenuLine(
+              itemName: itemName,
+            ),
+            Expanded(
+              child: row,
+            ),
+          ],
+        ));
+  }
+}

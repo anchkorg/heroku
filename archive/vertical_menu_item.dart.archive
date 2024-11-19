@@ -1,0 +1,48 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'active_menu_line.dart';
+import 'custom_text.dart';
+import 'route.dart';
+import 'style.dart';
+//import 'package:universe/pages/home/presentation/controllers/menu_controller.dart1';
+
+class VerticalMenuItem extends ConsumerWidget {
+  final String itemName;
+  final VoidCallback onTap;
+  const VerticalMenuItem(
+      {Key? key, required this.itemName, required this.onTap})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    String activeItemValue = ref.read(activeItem);
+    List<Widget> menuItemWidgets = [];
+    menuItemWidgets.add(Padding(
+      padding: const EdgeInsets.all(16),
+      child: returnIconFor(itemName),
+    ));
+    menuItemWidgets.add(Flexible(
+        child: CustomText(
+      text: itemName,
+      color: (activeItemValue == itemName) ? menuActiveColor : menuColor,
+      size: standardTextSize,
+      weight: FontWeight.normal,
+    )));
+    return InkWell(
+        onTap: onTap,
+        child: Row(
+          children: [
+            ActiveMenuLine(
+              itemName: itemName,
+            ),
+            Expanded(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: menuItemWidgets.toList(),
+              ),
+            ),
+          ],
+        ));
+  }
+}

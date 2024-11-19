@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Patrick\SynologyDrive\Code\anchkorg\concert\windows\flutter\ephemeral\.plugin_symlinks\sentry_flutter\windows\sentry_flutter_plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Patrick\SynologyDrive\Code\anchkorg\concert\windows\flutter\ephemeral\.plugin_symlinks\sentry_flutter\windows\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2B366474-37EB-31B3-8384-2D1FA3DCE5E6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

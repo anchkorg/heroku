@@ -1,0 +1,140 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="anchk.org.concert"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\patrick\SynologyDrive\Code\anchkorg\concert\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\patrick\SynologyDrive\Code\anchkorg\concert\android\app\src\debug\AndroidManifest.xml:6:22-64
+16
+17    <permission
+17-->[androidx.core:core:1.10.1] C:\Users\patrick\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+18        android:name="anchk.org.concert.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.10.1] C:\Users\patrick\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.10.1] C:\Users\patrick\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="anchk.org.concert.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.10.1] C:\Users\patrick\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.10.1] C:\Users\patrick\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+22
+23    <application
+24        android:name="android.app.Application"
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.10.1] C:\Users\patrick\.gradle\caches\transforms-3\c4988ff80110f75080a936fc6f044848\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+26        android:debuggable="true"
+27        android:icon="@mipmap/ic_launcher"
+28        android:label="concert" >
+29        <activity
+30            android:name="anchk.org.concert.MainActivity"
+31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+32            android:exported="true"
+33            android:hardwareAccelerated="true"
+34            android:launchMode="singleTop"
+35            android:theme="@style/LaunchTheme"
+36            android:windowSoftInputMode="adjustResize" >
+37
+38            <!--
+39                 Specifies an Android theme to apply to this Activity as soon as
+40                 the Android process has started. This theme is visible to the user
+41                 while the Flutter UI initializes. After that, this theme continues
+42                 to determine the Window background behind the Flutter UI.
+43            -->
+44            <meta-data
+45                android:name="io.flutter.embedding.android.NormalTheme"
+46                android:resource="@style/NormalTheme" />
+47
+48            <intent-filter>
+49                <action android:name="android.intent.action.MAIN" />
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+52            </intent-filter>
+53        </activity>
+54        <activity
+55            android:name="com.linusu.flutter_web_auth_2.CallbackActivity"
+56            android:exported="true" >
+57            <intent-filter android:label="flutter_web_auth_2" >
+58                <action android:name="android.intent.action.VIEW" />
+59
+60                <category android:name="android.intent.category.DEFAULT" />
+61                <category android:name="android.intent.category.BROWSABLE" />
+62
+63                <data android:scheme="appwrite-callback-61b0428203f09" />
+64            </intent-filter>
+65        </activity>
+66        <!--
+67             <activity
+68            android:name="io.appwrite.views.CallbackActivity"
+69            android:exported="true">
+70            <intent-filter android:label="android_web_auth">
+71                <action android:name="android.intent.action.VIEW" />
+72
+73                <category android:name="android.intent.category.DEFAULT" />
+74                <category android:name="android.intent.category.BROWSABLE" />
+75
+76                <data android:scheme="appwrite-callback-61b0428203f09" />
+77            </intent-filter>
+78        </activity>
+79        -->
+80        <!--
+81             Don't delete the meta-data below.
+82             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+83        -->
+84        <meta-data
+85            android:name="flutterEmbedding"
+86            android:value="2" />
+87
+88        <activity
+88-->[:url_launcher_android] C:\Users\patrick\SynologyDrive\Code\anchkorg\concert\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+89            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+89-->[:url_launcher_android] C:\Users\patrick\SynologyDrive\Code\anchkorg\concert\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+90            android:exported="false"
+90-->[:url_launcher_android] C:\Users\patrick\SynologyDrive\Code\anchkorg\concert\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+91            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+91-->[:url_launcher_android] C:\Users\patrick\SynologyDrive\Code\anchkorg\concert\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+92
+93        <uses-library
+93-->[androidx.window:window:1.0.0-beta04] C:\Users\patrick\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+94            android:name="androidx.window.extensions"
+94-->[androidx.window:window:1.0.0-beta04] C:\Users\patrick\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+95            android:required="false" />
+95-->[androidx.window:window:1.0.0-beta04] C:\Users\patrick\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+96        <uses-library
+96-->[androidx.window:window:1.0.0-beta04] C:\Users\patrick\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+97            android:name="androidx.window.sidecar"
+97-->[androidx.window:window:1.0.0-beta04] C:\Users\patrick\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+98            android:required="false" />
+98-->[androidx.window:window:1.0.0-beta04] C:\Users\patrick\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+99
+100        <provider
+100-->[io.sentry:sentry-android-core:7.0.0] C:\Users\patrick\.gradle\caches\transforms-3\d7cdffd16bf6d3857a7e8ac1a4b5e5f2\transformed\jetified-sentry-android-core-7.0.0\AndroidManifest.xml:16:9-20:39
+101            android:name="io.sentry.android.core.SentryPerformanceProvider"
+101-->[io.sentry:sentry-android-core:7.0.0] C:\Users\patrick\.gradle\caches\transforms-3\d7cdffd16bf6d3857a7e8ac1a4b5e5f2\transformed\jetified-sentry-android-core-7.0.0\AndroidManifest.xml:17:13-76
+102            android:authorities="anchk.org.concert.SentryPerformanceProvider"
+102-->[io.sentry:sentry-android-core:7.0.0] C:\Users\patrick\.gradle\caches\transforms-3\d7cdffd16bf6d3857a7e8ac1a4b5e5f2\transformed\jetified-sentry-android-core-7.0.0\AndroidManifest.xml:18:13-77
+103            android:exported="false"
+103-->[io.sentry:sentry-android-core:7.0.0] C:\Users\patrick\.gradle\caches\transforms-3\d7cdffd16bf6d3857a7e8ac1a4b5e5f2\transformed\jetified-sentry-android-core-7.0.0\AndroidManifest.xml:19:13-37
+104            android:initOrder="200" />
+104-->[io.sentry:sentry-android-core:7.0.0] C:\Users\patrick\.gradle\caches\transforms-3\d7cdffd16bf6d3857a7e8ac1a4b5e5f2\transformed\jetified-sentry-android-core-7.0.0\AndroidManifest.xml:20:13-36
+105        <provider
+105-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\patrick\.gradle\caches\transforms-3\7d7fafe6351e6ce14bb67797ad51335e\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+106            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+106-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\patrick\.gradle\caches\transforms-3\7d7fafe6351e6ce14bb67797ad51335e\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+107            android:authorities="anchk.org.concert.lifecycle-process"
+107-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\patrick\.gradle\caches\transforms-3\7d7fafe6351e6ce14bb67797ad51335e\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+108            android:exported="false"
+108-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\patrick\.gradle\caches\transforms-3\7d7fafe6351e6ce14bb67797ad51335e\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+109            android:multiprocess="true" />
+109-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\patrick\.gradle\caches\transforms-3\7d7fafe6351e6ce14bb67797ad51335e\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+110    </application>
+111
+112</manifest>
