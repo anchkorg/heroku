@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - heroku
-
+      
 jobs:
   flutter_test:
     name: Run flutter test and analyze
