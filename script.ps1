@@ -17,3 +17,7 @@ heroku container:release web --app=uat-anchkorg-cloud
 flutter build web --web-renderer canvaskit --release
 docker build -f DockerFile -t patricktslee/www-anchk-org:1.2.10 .
 docker push patricktslee/www-anchk-org:1.2.10
+
+flutter build web --web-renderer canvaskit --release
+docker build -f DockerFile -t patricktslee/uat-anchk-org:heroku .
+docker push patricktslee/uat-anchk-org:heroku
