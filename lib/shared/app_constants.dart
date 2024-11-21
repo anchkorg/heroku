@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../service/appwrite.dart';
 
 class AppConstants {
-  static const String version = '1.2.13';
+  static const String version = '1.2.14';
 //  static const deployment = DeploymentMode.production;
   static const deployment = DeploymentMode.uat;
 //  static const deployment = DeploymentMode.development;
